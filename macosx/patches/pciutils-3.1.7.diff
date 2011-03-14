@@ -1,3 +1,8 @@
+Port pciutils to Mac OS X using DirectHW:
+http://www.coreboot.org/DirectHW
+
+Signed-off-by: Stefan Reinauer <stefan.reinauer@coreboot.org>
+
 Index: pciutils-3.1.7/osx/Welcome.rtf
 ===================================================================
 --- pciutils-3.1.7/osx/Welcome.rtf

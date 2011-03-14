@@ -1,3 +1,8 @@
+Port dmidecode package to Mac OS X using DirectHW:
+http://www.coreboot.org/DirectHW
+
+Signed-off-by: Stefan Reinauer <stefan.reinauer@coreboot.org>
+
 Index: dmidecode-2.11/biosdecode.c
 ===================================================================
 --- dmidecode-2.11/biosdecode.c

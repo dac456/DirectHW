@@ -1,3 +1,8 @@
+Update port of nvramtool to Mac OS X using DirectHW:
+http://www.coreboot.org/DirectHW
+
+Signed-off-by: Stefan Reinauer <stefan.reinauer@coreboot.org>
+
 Index: nvramtool-r6440/accessors/cmos-hw-unix.c
 ===================================================================
 --- nvramtool-r6440/accessors/cmos-hw-unix.c

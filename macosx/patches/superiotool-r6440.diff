@@ -1,3 +1,8 @@
+Update port of superiotool to Mac OS X using DirectHW:
+http://www.coreboot.org/DirectHW
+
+Signed-off-by: Stefan Reinauer <stefan.reinauer@coreboot.org>
+
 Index: superiotool-r6440/superiotool.h
 ===================================================================
 --- superiotool-r6440/superiotool.h

@@ -1,3 +1,8 @@
+Update port of inteltool to Mac OS X using DirectHW:
+http://www.coreboot.org/DirectHW
+
+Signed-off-by: Stefan Reinauer <stefan.reinauer@coreboot.org>
+
 Index: inteltool-r6440/inteltool.h
 ===================================================================
 --- inteltool-r6440/inteltool.h

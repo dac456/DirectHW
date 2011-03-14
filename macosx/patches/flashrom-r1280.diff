@@ -1,3 +1,8 @@
+Update port of flashrom package to Mac OS X using DirectHW:
+http://www.coreboot.org/DirectHW
+
+Signed-off-by: Stefan Reinauer <stefan.reinauer@coreboot.org>
+
 Index: flashrom-r1280/hwaccess.h
 ===================================================================
 --- flashrom-r1280/hwaccess.h
