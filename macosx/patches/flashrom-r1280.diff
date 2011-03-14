@@ -1,0 +1,41 @@
+Index: flashrom-r1280/hwaccess.h
+===================================================================
+--- flashrom-r1280/hwaccess.h
++++ flashrom-r1280/hwaccess.h
+@@ -194,7 +194,7 @@
+ #else
+ #if defined(__DARWIN__)
+     /* Header is part of the DirectHW library. */
+-    #include <DirectIO/darwinio.h>
++    #include <DirectHW/DirectHW.h>
+     #define off64_t off_t
+     #define lseek64 lseek
+ #endif
+Index: flashrom-r1280/Makefile
+===================================================================
+--- flashrom-r1280/Makefile
++++ flashrom-r1280/Makefile
+@@ -44,8 +44,8 @@
+ endif
+ ifeq ($(OS_ARCH), Darwin)
+ CPPFLAGS += -I/opt/local/include -I/usr/local/include
+-# DirectIO framework can be found in the DirectHW library.
+-LDFLAGS += -framework IOKit -framework DirectIO -L/opt/local/lib -L/usr/local/lib
++# DirectHW framework can be found in the DirectHW library.
++LDFLAGS += -framework IOKit -framework DirectHW -L/opt/local/lib -L/usr/local/lib
+ endif
+ ifeq ($(OS_ARCH), FreeBSD)
+ CPPFLAGS += -I/usr/local/include
+Index: flashrom-r1280/physmap.c
+===================================================================
+--- flashrom-r1280/physmap.c
++++ flashrom-r1280/physmap.c
+@@ -134,7 +134,7 @@
+ }
+ #elif defined(__DARWIN__)
+ 
+-#define MEM_DEV "DirectIO"
++#define MEM_DEV "DirectHW"
+ 
+ static void *sys_physmap(unsigned long phys_addr, size_t len)
+ {
