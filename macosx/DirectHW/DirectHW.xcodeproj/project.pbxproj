@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 44;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -129,9 +129,16 @@
 /* Begin PBXProject section */
 		5D99328B0D0F94EE00760F43 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+			};
 			buildConfigurationList = 5D99328E0D0F94EE00760F43 /* Build configuration list for PBXProject "DirectHW" */;
-			compatibilityVersion = "Xcode 3.0";
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 5D9932890D0F94EE00760F43;
 			productRefGroup = 5D99329C0D0F952400760F43 /* Products */;
 			projectDirPath = "";
@@ -184,7 +191,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = "DirectHW-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
 				STRIPFLAGS = "-no_uuid";
 			};
 			name = Debug;
@@ -193,7 +203,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = "DirectHW-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
 				STRIPFLAGS = "-no_uuid";
 			};
 			name = Release;
@@ -201,10 +214,7 @@
 		5D9932D90D0F97D100760F43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					x86_64,
-					i386,
-				);
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -213,10 +223,10 @@
 				INFOPLIST_FILE = "DirectHW-Info.plist";
 				INSTALL_GROUP = wheel;
 				INSTALL_OWNER = root;
-				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
-				MODULE_NAME = com.coresystems.driver.DirectHW;
+				MODULE_NAME = com.dcook.driver.DirectHW;
 				MODULE_VERSION = 1.0;
 				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcook.driver.DirectHW;
 				PRODUCT_NAME = DirectHW;
 				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = kext;
@@ -227,10 +237,7 @@
 		5D9932DA0D0F97D100760F43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					x86_64,
-					i386,
-				);
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -238,10 +245,10 @@
 				INFOPLIST_FILE = "DirectHW-Info.plist";
 				INSTALL_GROUP = wheel;
 				INSTALL_OWNER = root;
-				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
-				MODULE_NAME = com.coresystems.driver.DirectHW;
+				MODULE_NAME = com.dcook.driver.DirectHW;
 				MODULE_VERSION = 1.0;
 				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dcook.driver.DirectHW;
 				PRODUCT_NAME = DirectHW;
 				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = kext;
@@ -252,10 +259,7 @@
 		FDC4F2B60E923DF00006B2A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					x86_64,
-					i386,
-				);
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -269,6 +273,7 @@
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Frameworks";
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coresystems.DirectHW;
 				PRODUCT_NAME = DirectHW;
 				VALID_ARCHS = "i386 x86_64";
 				ZERO_LINK = YES;
@@ -278,10 +283,7 @@
 		FDC4F2B70E923DF00006B2A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					x86_64,
-					i386,
-				);
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -294,6 +296,7 @@
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Frameworks";
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coresystems.DirectHW;
 				PRODUCT_NAME = DirectHW;
 				VALID_ARCHS = "i386 x86_64";
 				ZERO_LINK = NO;
